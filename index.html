@@ -248,7 +248,7 @@ function field(it){
       `<div class="pair"><input type="text" aria-label="${esc(label)} ${i+1} label" data-k="${key}.${i}.label"><input type="text" aria-label="${esc(label)} ${i+1} value" data-k="${key}.${i}.value"></div>`).join('')}</div>`;
   if(type==='image'){
     const extra = key==='photo' ? `<button data-act="center">Re-center photo</button>`
-                : key==='badge' ? `<button data-img-clear="badge">Use simple badge</button>`
+                : key==='badge' ? ''
                 : `<button data-img-clear="${key}">Remove</button>`;
     return `<div class="img">${esc(label)}<div class="btns"><button data-img="${key}">Choose image…</button>${extra}</div></div>`;
   }
